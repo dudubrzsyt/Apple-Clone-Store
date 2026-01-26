@@ -1,0 +1,59 @@
+/* Header.css */
+.header {
+  background-color: #fff;        /* fundo branco */
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* espaço entre logo e nav/botão */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 20px;                  /* tamanho pequeno da maçã */
+  width: auto;
+}
+
+.nav {
+  flex: 1;                       /* ocupa espaço para cobrir a barra */
+  display: flex;
+  justify-content: center;       /* centraliza os links */
+  gap: 40px;                     /* espaçamento maior entre links */
+}
+
+.nav a {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Helvetica, Arial, sans-serif;
+  color: #000;                   /* preto para contraste no fundo branco */
+  font-weight: 500;              /* semi-negrito */
+  text-decoration: none;         /* remove sublinhado */
+  font-size: 12px;               /* letras pequenas e minimalistas */
+  letter-spacing: 0.5px;         /* espaçamento refinado */
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #555;                   /* cinza mais claro ao passar o mouse */
+}
+
+.toggle-btn {
+  background-color: #000;        /* botão preto */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;              /* bem pequeno */
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logo img {
+  height: 20px;   /* tamanho pequeno e minimalista */
+  width: auto;
+}
+
+.toggle-btn:hover {
+  background-color: #333;        /* cinza escuro no hover */
+}

@@ -1,0 +1,54 @@
+.comprar-page {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.options {
+  margin-bottom: 40px;
+}
+
+.options h2 {
+  margin-bottom: 16px;
+}
+
+.option-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.option {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  border-color: #0071e3;
+  color: #0071e3;
+}
+
+.checkout {
+  text-align: center;
+}
+
+.btn {
+  background: #0071e3;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}

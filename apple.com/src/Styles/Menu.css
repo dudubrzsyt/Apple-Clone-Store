@@ -1,0 +1,205 @@
+/* Container dos botões */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0;
+}
+
+/* Botão Comprar */
+.btn-comprar {
+  background-color: #0071e3; /* azul Apple */
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #005bb5;
+}
+
+/* Botão Saiba mais */
+.btn-saiba {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-saiba:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Submenu escondido por padrão */
+.submenu {
+  position: absolute;
+  top: 56px; /* logo abaixo do header */
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95); /* branco quase transparente */
+  backdrop-filter: blur(10px); /* efeito Apple */
+  display: none; /* escondido */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  z-index: 999;
+}
+
+/* Quando ativo, aparece */
+.submenu.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.submenu a {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.submenu a:hover {
+  color: #666;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Overlay do menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* bem alto */
+}
+
+/* Conteúdo do menu */
+.menu-content {
+  background: #111;
+  color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.submenu {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  z-index: 999;
+}
+
+.submenu.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.submenu a {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.submenu a:hover {
+  color: #666;
+}
+
+/* Submenu específico para Comprar */
+.comprar-menu {
+  top: 100px; /* aparece mais abaixo que o da logo */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Lista de produtos */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.menu-list li {
+  margin: 8px 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Botão Fechar */
+.btn-fechar {
+  margin-top: 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-fechar:hover {
+  background-color: #555;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
