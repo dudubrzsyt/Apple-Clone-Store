@@ -116,7 +116,7 @@
 /* Barra superior */
 .header {
   background-color: #fff;
-  height: 19px;              /* mais fino */
+  height: 20pxx;              /* mais fino */
   padding: 19px;
   display: flex;
   align-items: center;

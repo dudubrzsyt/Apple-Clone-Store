@@ -71,37 +71,38 @@ const useTheme = () => {
 const sections: Section[] = [
   {
     id: "iphone15pro",
-    title: "iPhone 15 Pro",
-    subtitle: "Poder além do imaginável.",
+    title: "iPhone 17 Pro",
+    subtitle: "Desing inovador para um desepenho Pro exepcional.",
     description: [
-      "Criado em titânio aeroespacial.",
+      "Criado em uma Estrutura unibody em aluminio forjado a quente.",
       "Mais leve. Mais resistente.",
-      "Com o A17 Pro — o maior salto de performance já feito em um chip mobile.",
+      "até 12 horas a maias de bateria e repordução de vídeos",
+      "Com o A19 Pro — o maior salto de performance já feito em um chip mobile.",
     ],
-    price: "A partir de R$ ___.",
+    price: "A partir de R$ 8.899",
     ctas: [
       { label: "Comprar", href: "#comprar-iphone15pro", variant: "primary" },
       { label: "Saiba mais", href: "#saiba-iphone15pro", variant: "ghost" },
     ],
-    imageAlt: "iPhone 15 Pro em titânio",
+    imageAlt: "iPhone 17 Pro em aluminio",
     imageUrl:
-      "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone_15_pro.png", // trocado. por asset oficial Apple
+      "https://http2.mlstatic.com/D_NQ_NP_2X_703919-MLA96100970363_102025-F.webp", // trocado. por asset oficial Apple
     theme: "light",
   },
   {
     id: "iphone15",
-    title: "iPhone 15",
+    title: "iPhone 17",
     subtitle: "Cor. Brilho. Personalidade.",
     description: [
       "Com Dynamic Island.",
       "Câmera avançada 48MP.",
       "Uma bateria que dura o dia todo.",
     ],
-    price: "A partir de R$ ___.",
+    price: "A partir de R$ 6.479.",
     ctas: [{ label: "Comprar", href: "#comprar-iphone15", variant: "primary" }],
-    imageAlt: "iPhone 15 em diversas cores",
+    imageAlt: "iPhone 17 em diversas cores",
     imageUrl:
-      "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone_15_hero.png", // Substituir por asset oficial Apple
+      "https://http2.mlstatic.com/D_NQ_NP_2X_724430-MLA97899894923_112025-F.webp", // Substituir por asset oficial Apple
     theme: "light",
   },
   {
@@ -248,7 +249,7 @@ const styles = {
     lineHeight: 1.5,
   }),
   container: {
-    maxWidth: 1200,
+    maxWidth: 850,
     margin: "0 auto",
     padding: "0 16px",
   } as React.CSSProperties,
@@ -425,7 +426,8 @@ const styles = {
   }),
 };
 
-/* Componentes auxiliares */
+/* Componentes auxiliares 
+
 const ThemeToggle: React.FC<{ dark: boolean; setDark: (v: boolean) => void; colors: ReturnType<typeof useTheme>["colors"] }> = ({
   dark,
   setDark,
@@ -458,6 +460,9 @@ const CartButton: React.FC<{ colors: ReturnType<typeof useTheme>["colors"]; onCl
     🛒
   </button>
 );
+
+*/
+
 
 /* Modais simples */
 const Modal: React.FC<{
@@ -626,12 +631,14 @@ const Header: React.FC<{
             </a>
           ))}
         </nav>
+        {/*}
         <div style={styles.actions}>
           <ThemeToggle dark={dark} setDark={setDark} colors={colors} />
           <SearchButton colors={colors} onClick={onOpenSearch} />
           <AccountButton colors={colors} onClick={onOpenAccount} />
           <CartButton colors={colors} onClick={onOpenCart} />
         </div>
+        {/* */}
       </div>
     </header>
   );
@@ -757,7 +764,7 @@ const Footer: React.FC<{ colors: ReturnType<typeof useTheme>["colors"] }> = ({ c
         <div style={styles.legal(colors)}>
           <p>Copyright © {new Date().getFullYear()} Apple Inc. Todos os direitos reservados.</p>
           <p>Privacidade • Termos de uso • Vendas e reembolsos • Legal • Mapa do site</p>
-          <p>Este é um layout de demonstração inspirado no site da Apple. Imagens são placeholders.</p>
+          <p>Este é um layout de demonstração inspirado no site da Apple. Imagens são placeholdersf Igor.</p>
         </div>
       </div>
     </footer>
