@@ -1,0 +1,65 @@
+/* Header.css */
+.header {
+  background-color: #fff;          /* fundo branco */
+  padding: 1spx 40px;              /* header maior e mais espaçoso */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* logo à esquerda, nav no centro, botão à direita */
+  border-bottom: 1px solid #e0e0e0; /* linha discreta para separar */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;                 /* deixa a logo clicável */
+  transition: transform 0.3s ease; /* animação suave */
+}
+
+.logo img {
+  height: 120px;                    /* logo maior */
+  width: auto;
+  filter: grayscale(100%);         /* estilo minimalista em preto e branco */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo img:hover {
+  filter: grayscale(0%);           /* volta à cor ao passar o mouse */
+  transform: scale(1.1);           /* leve aumento no hover */
+}
+
+.nav {
+  flex: 1;                         /* ocupa espaço para cobrir a barra */
+  display: flex;
+  justify-content: center;         /* centraliza os links */
+  gap: 48px;                       /* espaçamento maior entre links */
+}
+
+.nav a {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Helvetica, Arial, sans-serif;
+  color: #000;                     /* preto para contraste no fundo branco */
+  font-weight: 500;                /* semi-negrito */
+  text-decoration: none;           /* remove sublinhado */
+  font-size: 14px;                 /* letras um pouco maiores */
+  letter-spacing: 0.6px;           /* espaçamento refinado */
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #666;                     /* cinza mais suave ao passar o mouse */
+}
+
+.toggle-btn {
+  background-color: #000;          /* botão preto */
+  color: #fff;
+  border: none;
+  border-radius: 20px;             /* botão arredondado */
+  padding: 6px 12px;               /* pequeno e discreto */
+  font-size: 11px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #333;          /* cinza escuro no hover */
+  transform: scale(1.05);          /* leve aumento no hover */
+}

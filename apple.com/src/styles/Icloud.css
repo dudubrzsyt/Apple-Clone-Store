@@ -1,0 +1,194 @@
+.icloud-main {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.icloud-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icloud-hero {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease;
+}
+
+.icloud-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.icloud-subtitle {
+  font-size: 20px;
+  margin-top: 16px;
+  color: #6e6e73;
+}
+
+.icloud-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.icloud-card {
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icloud-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.icloud-img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.icloud-footer {
+  margin-top: 80px;
+  text-align: center;
+  color: #6e6e73;
+  font-size: 14px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .icloud-title {
+    font-size: 36px;
+  }
+  .icloud-subtitle {
+    font-size: 18px;
+  }
+  .icloud-card {
+    padding: 20px;
+  }
+}
+
+.icloud-main {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.icloud-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.icloud-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.icloud-title {
+  font-size: 52px;
+  font-weight: 700;
+  animation: fadeIn 1s ease;
+}
+
+.icloud-subtitle {
+  font-size: 22px;
+  margin-top: 16px;
+  color: #6e6e73;
+  animation: fadeIn 1.2s ease;
+}
+
+.icloud-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  animation: slideUp 1s ease;
+}
+
+.icloud-card {
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icloud-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.icloud-img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.icloud-img-large {
+  max-width: 80%;
+  border-radius: 20px;
+  margin: 40px auto;
+  display: block;
+}
+
+.icloud-extra {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.icloud-footer {
+  margin-top: 80px;
+  text-align: center;
+  color: #6e6e73;
+  font-size: 14px;
+}
+
+/* Animações */
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+.slide-up {
+  animation: slideUp 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .icloud-title {
+    font-size: 36px;
+  }
+  .icloud-subtitle {
+    font-size: 18px;
+  }
+  .icloud-card {
+    padding: 20px;
+  }
+  .icloud-img-large {
+    max-width: 100%;
+  }
+}
+

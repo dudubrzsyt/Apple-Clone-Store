@@ -1,0 +1,39 @@
+.card {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+.card p {
+  opacity: 0.7;
+}
+
+.card button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #0d84ff;
+}

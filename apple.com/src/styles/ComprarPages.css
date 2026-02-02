@@ -1,0 +1,92 @@
+.comprar-page {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #1d1d1f;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-y: auto; /* permite scroll vertical */
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.models-section {
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.model-card {
+  background: #f5f5f7;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.model-image {
+  width: 100%;
+  max-width: 160px; /* imagens menores para caber melhor */
+  margin: 0 auto 16px;
+  border-radius: 12px;
+}
+
+.model-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0071e3;
+  margin: 8px 0;
+}
+
+.model-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 24px;
+  background-color: #0071e3;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.model-btn:hover {
+  background-color: #005bb5;
+}
+
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6e6e73;
+  border-top: 1px solid #e5e5ea;
+}

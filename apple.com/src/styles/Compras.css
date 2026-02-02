@@ -1,0 +1,27 @@
+.compras {
+  padding: 40px;
+  text-align: center;
+}
+
+.compras h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.compras p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.btn-continuar {
+  background-color: #0071e3;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-continuar:hover {
+  background-color: #005bb5;
+}

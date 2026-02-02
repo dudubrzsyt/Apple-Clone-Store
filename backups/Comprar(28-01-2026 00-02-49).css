@@ -1,0 +1,92 @@
+.comprar-page {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #f5f5f7, #ffffff);
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #6e6e73;
+  animation: fadeInUp 1.2s ease;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  font-weight: 600;
+}
+
+.option-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.option {
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: 1px solid #d2d2d7;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Paleta de cores Apple */
+.option.azul { background: #007aff; color: #fff; }
+.option.preto { background: #1c1c1e; color: #fff; }
+.option.prata { background: #e5e5ea; color: #000; }
+.option.dourado { background: #ffd700; color: #000; }
+
+.price {
+  font-size: 1.6rem;
+  margin: 40px 0 20px;
+  font-weight: 600;
+}
+
+.btn {
+  background: #0071e3;
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+/* Animações */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  background: red !important;
+}
