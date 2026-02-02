@@ -78,7 +78,7 @@
   transition: color 0.3s ease;
 }
 
-* Botão Comprar no Header */
+/* Botão Comprar no Header */
 .btn-comprar {
   background-color: #0071e3; /* azul Apple */
   color: #fff;

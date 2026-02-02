@@ -10,7 +10,7 @@ const SectionBlock: React.FC<{
   colors: ReturnType<typeof useTheme>["colors"];
 }> = ({ section, colors }) => {
   
-  // Se não vier section, não renderiza nada
+  //* Se não vier section, não renderiza nada
   if (!section) {
     console.warn("SectionBlock recebeu section undefined");
     return null;

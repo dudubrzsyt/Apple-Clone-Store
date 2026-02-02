@@ -1,4 +1,4 @@
-// src/components/SectionBlockStyles.ts
+//* src/components/SectionBlockStyles.ts
 const styles = {
   hero: (colors: any) => ({
     backgroundColor: colors.background,
