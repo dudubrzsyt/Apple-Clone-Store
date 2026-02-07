@@ -1,0 +1,182 @@
+.buscar-page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header minimalista */
+.buscar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e5e7;
+  background: rgba(255, 255, 255, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.buscar-logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #1d1d1f;
+  transition: transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Campo de busca */
+.buscar-section {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.buscar-form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.buscar-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.buscar-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0071e3;
+}
+
+.buscar-btn {
+  padding: 0.8rem 1.2rem;
+  background: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buscar-btn:hover {
+  background: #005bb5;
+}
+
+/* Resultados */
+.buscar-results {
+  padding: 2rem;
+  text-align: center;
+  color: #6e6e73;
+}
+
+.buscar-feedback {
+  font-size: 1.1rem;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Menu lateral */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2000;
+}
+
+.menu-panel {
+  background: #fff;
+  width: 280px;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #1d1d1f;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+
+
+
+/* Links do menu (todos os botões do Header) */
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+
+.menu-links a {
+  text-decoration: none;
+  color: #1d1d1f; /* Preto minimalista */
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.menu-links a:hover {
+  color: #0071e3;
+  transform: translateX(5px);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .buscar-form {
+    flex-direction: column;
+  }
+
+  .buscar-btn {
+    width: 100%;
+  }
+
+  .menu-panel {
+    width: 70%;
+  }
+}
